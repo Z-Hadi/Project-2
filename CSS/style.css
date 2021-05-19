@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Raleway-Variable';
+    src: url('Fonts/Raleway-Variable.ttf');
+}
+
+body {
+    font-family: raleway;
+    margin: 2em 3em;
+}
+
+.bold{ font-weight: bold; }
+
+
+
+
+.nav {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+.reserviai {
+    width: 4em;
+    margin-inline-start: -2.7em;
+    flex-grow: 1 1 500px;
+    }
+
+.acco {
+
+        width: 60%;
+        background-color: #f2f2f2;
+        border-radius: 20px ;
+        padding: 2em 3em;
+        margin-bottom: 5em;
+    }
+.row1 {
+
+    display: inline-flex;
+    flex-flow: row wrap;
+    gap: 1.8em;
+    box-sizing: border-box;
+}
+.pic {
+    background-color: white;
+    width: 29%;
+    height:13em ;
+    border-radius: 1em;
+    padding: 0.4em 0.4em 1em 0.4em;
+    box-sizing: content-box;
+    line-height: 0.6em;
+    
+    
+
+}
+
+
+li {
+  list-style: none; }
+
+footer {
+    width:100%;
+  
+  
+  
+  background-color: #f2f2f2;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20%;
+}
+
+.about li:nth-child(1),
+.our li:nth-child(1),
+.assistance li:nth-child(1) {
+  font-weight: bold;
+}
