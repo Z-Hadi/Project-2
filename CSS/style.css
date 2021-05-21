@@ -13,15 +13,19 @@ body {
 
 
 
-.nav {
-    display: inline-flex;
-    flex-grow: 1;
+.nav--line {
+    display: flex;
+    justify-content: space-between;
+     
 }
 
-.reserviai {
-    width: 4em;
-    margin-inline-start: -2.7em;
-    flex-grow: 1 1 500px;
+.logo {
+    flex-grow: 1; 
+    
+}
+.logo--img {
+    width: 70px;
+        
     }
 
 .acco {
@@ -38,6 +42,11 @@ body {
     flex-flow: row wrap;
     gap: 1.8em;
     box-sizing: border-box;
+}
+
+.pic--style {
+    width:100%; height: 60%;  border-top-left-radius: 15px;  border-top-right-radius: 15px;
+
 }
 .pic {
     background-color: white;
