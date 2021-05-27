@@ -23,6 +23,16 @@ body {
     flex-grow: 1;
 }
 
+.info{ 
+    display: flex;
+}
+
+.info-item-icon{ 
+    padding: 10px 20px ;
+    font-size:20px;
+    margin:0px;
+    
+}
 .navbar-logo {
     width: 100px;
         }
@@ -97,7 +107,8 @@ border-top:none;
   display:flex;
     line-height: 0px;
     font-size: 20px;
-    border: 2px solid  #f2f2f2;
+    border: 2px solid  #f2f2f2a2;
+    border-left: none;
       width:auto;
     border-radius: 50px;
     line-height: 0px;
@@ -118,49 +129,176 @@ border-top:none;
   
   .filter-item-text{
     padding: 5px 20px;
-    
-  
   
   }
   
+.accommodations-mp{
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
 
+.accommodation {
 
-
-
-
-
-.acco {
-
-        width: 60%;
+        width: 70%;
         background-color: #f2f2f2;
         border-radius: 20px ;
-        padding: 2em 3em;
-        margin-bottom: 5em;
+        padding: 20px 20px 30px 50px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+        
     }
 .row1 {
 
-    display: inline-flex;
-    flex-flow: row wrap;
-    gap: 1.8em;
-    box-sizing: border-box;
+    display: flex;
+    flex-flow: row ;
+    margin-left: 0px;
+    margin-bottom: 50px;
+       
+}
+.column{
+  margin-right: 50px;
+  width: 33%;
+  box-shadow: 10px 10px 10px #dbd9d9;
+  
+
 }
 
-.pic--style {
-    width:100%; height: 60%;  border-top-left-radius: 15px;  border-top-right-radius: 15px;
-
-}
 .pic {
     background-color: white;
-    width: 29%;
-    height:13em ;
+    width: 100%;
+    height: 250px;
+   object-fit: fill;
     border-radius: 1em;
     padding: 0.4em 0.4em 1em 0.4em;
-    box-sizing: content-box;
     line-height: 0.6em;
-    
-    
+}
+.pic--style {
+ width:100%; height: 60%;  
+ border-top-left-radius: 15px; 
+border-top-right-radius: 15px;
+      
+}
+
+.pic--text{ 
+  padding-left:16px ;
+  
+}
+
+.most-popular {
+
+  width: 22%;
+  background-color: #f2f2f2;
+        border-radius: 20px ;
+        padding: 20px 50px 30px 50px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+  
+}
+.row-mp {
+
+  display: flex;
+  flex-direction: column ;
+  margin-left: 0px;
+  padding-top: 20px;
+
+  
+     
+}
+.column-mp{
+box-shadow: 10px 10px 10px #dbd9d9;
+margin-bottom: 50px;
+
+
 
 }
+
+.pic-mp {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+  .pic--style-mp {
+    width: 35%; 
+    height: 160px;  
+    border-radius: 20px 0px 0px 20px; 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+     
+     }
+
+
+.pic--text-mp{ 
+padding-left:16px ;
+padding-bottom: 10px;
+overflow:visible;
+line-height: 25px;
+
+
+}
+
+.most-popular-head{
+display: flex;
+flex-direction: row;
+}
+.most-popular-text{
+  flex-grow: 1;
+}
+
+.most-popular-icon{
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+
+
+.activites-container{
+margin-bottom: 200px;
+
+}
+
+.activites-row {
+
+  display: flex;
+  flex-flow: row ;
+  margin-left: 0px;
+  margin-bottom: 0;
+     
+}
+
+.activites-column{
+margin-right: 50px;
+width: 25%;
+box-shadow: 10px 10px 10px #dbd9d9;
+
+}
+
+.activites-pic {
+  
+  width: 100%;
+  height: 50%;
+   border-radius: 1em;
+  
+}
+
+  .activites-pic--style {
+    width:100%; height: 100%;  
+    border-top-left-radius: 15px; 
+     border-top-right-radius: 15px;
+     
+}
+
+.activites-pic--text{ 
+padding-left:16px ;
+
+}
+
+
+
+
 
 
 li {
