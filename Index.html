@@ -4,13 +4,14 @@
 <head>
   <title> Reservia </title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="CSS/style.css" type="text/css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/27002befcb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <section>
-
     <nav>
       <ul class="navbar">
         <li class="flex-grow-1">
@@ -34,7 +35,7 @@
       <p class="dream-vacation__paragraph"> Downtown or in nature </p>
     </div>
     <div class="search">
-      <div class="search-item-location"><i class="fas fa-map-marker-alt" class="search-item"></i> </div>
+      <div class="search-item-location"><i id="info" class="fas fa-map-marker-alt" class="search-item"></i> </div>
       <div class="search-item-france">
         <h4>Mareseille, France</h4>
       </div>
@@ -69,23 +70,20 @@
       </div>
     </div>
 
-
-
-
     <div class="accommodations-mp">
       <div class="accommodation" id="accommodations">
         <h2> Accommodations in Marseille</h2>
 
 
-        <div class="row1">
+        <div class="row">
 
           <div class="column">
 
-            <div class="pic"> <img src="Images/1.jpg" class="pic--style">
+            <div class="pic"> <img src="Images/1.jpg " alt="View" class="pic--style">
 
               <div class="pic--text">
-                <h1>Auberge la Cannebiére</h1>
-                <p>Night start at <strong>25 €</strong> </p>
+                <h4 Class="Card__head">Auberge la Cannebiére</h4>
+                <p Class="Card__text">Night start at <strong>25 €</strong> </p>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -96,11 +94,11 @@
           </div>
           <div class="column">
 
-            <div class="pic"> <img src="Images/2.jpg" class="pic--style">
+            <div class="pic"> <img src="Images/2.jpg" alt="View" class="pic--style">
 
               <div class="pic--text">
-                <h1>Hôtel du port</h1>
-                <p>Night start at <strong>52 €</strong> </p>
+                <h4 Class="Card__head">Hôtel du port</h4>
+                <p Class="Card__text">Night start at <strong>52 €</strong> </p>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -112,11 +110,11 @@
           </div>
           <div class="column">
 
-            <div class="pic"> <img src="Images/3.jpg" class="pic--style">
+            <div class="pic"> <img src="Images/3.jpg" alt="View" class="pic--style">
 
               <div class="pic--text">
-                <h1>Les mouettes Hotel</h1>
-                <p>Night start at <strong>76 €</strong> </p>
+                <h4 Class="Card__head">Les mouettes Hotel</h4>
+                <p Class="Card__text">Night start at <strong>76 €</strong> </p>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -125,21 +123,17 @@
               </div>
             </div>
           </div>
-
-
-
-
-
         </div>
-        <div class="row1">
+
+        <div class="row">
 
           <div class="column">
 
-            <div class="pic"> <img src="Images/4.jpg" class="pic--style">
+            <div class="pic"> <img src="Images/4.jpg" alt="View" class="pic--style">
 
               <div class="pic--text">
-                <h1>Hôtel de la mer</h1>
-                <p>Night start at <strong>46 €</strong> </p>
+                <h4 Class="Card__head">Hôtel de la mer</h4>
+                <p Class="Card__text">Night start at <strong>46 €</strong> </p>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -150,11 +144,11 @@
           </div>
           <div class="column">
 
-            <div class="pic"> <img src="Images/5.jpg" class="pic--style">
+            <div class="pic"> <img src="Images/5.jpg" alt="View" class="pic--style">
 
               <div class="pic--text">
-                <h1>Auberge le Panie</h1>
-                <p>Night start at <strong>23 €</strong> </p>
+                <h4 Class="Card__head">Auberge le Panie</h4>
+                <p Class="Card__text">Night start at <strong>23 €</strong> </p>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -166,11 +160,11 @@
           </div>
           <div class="column">
 
-            <div class="pic"> <img src="Images/6.jpg" class="pic--style">
+            <div class="pic"> <img src="Images/6.jpg" alt="View" class="pic--style">
 
               <div class="pic--text">
-                <h1>Hôtel chez Amina</h1>
-                <p>Night start at <strong>96 €</strong> </p>
+                <h4 Class="Card__head">Hôtel chez Amina</h4>
+                <p Class="Card__text">Night start at <strong>96 €</strong> </p>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -198,7 +192,7 @@
 
           <div class="column-mp">
 
-            <div class="pic-mp"> <img src="Images/7.jpg" class="pic--style-mp">
+            <div class="pic-mp"> <img src="Images/7.jpg" alt="View" class="pic--style-mp">
 
               <div class="pic--text-mp">
                 <h3>Morning Sun Hotel </h3>
@@ -215,7 +209,7 @@
 
           <div class="column-mp">
 
-            <div class="pic-mp"> <img src="Images/8.jpg" class="pic--style-mp">
+            <div class="pic-mp"> <img src="Images/8.jpg" alt="View" class="pic--style-mp">
 
               <div class="pic--text-mp">
                 <h3>Au coeur de l'eau Bed and Breakfast </h3>
@@ -231,31 +225,22 @@
 
           <div class="column-mp">
 
-            <div class="pic-mp"> <img src="Images/9.jpg" class="pic--style-mp">
+            <div class="pic-mp"> <img src="Images/9.jpg" alt="View" class="pic--style-mp">
 
               <div class="pic--text-mp">
-                <h3>Tout bleu et Blanc Hotel</h2>
-                  <p>Night start at <strong>68 €</strong> </p>
-                  <i class="fas fa-star" style="color:#0065FC"></i>
-                  <i class="fas fa-star" style="color:#0065FC"></i>
-                  <i class="fas fa-star" style="color:#0065FC"></i>
-                  <i class="fas fa-star" style="color:#0065FC"></i>
-                  <i class="fas fa-star" style="color:#dbd9d9"></i>
+                <h3>Tout bleu et Blanc Hotel</h3>
+                <p>Night start at <strong>68 €</strong> </p>
+                <i class="fas fa-star" style="color:#0065FC"></i>
+                <i class="fas fa-star" style="color:#0065FC"></i>
+                <i class="fas fa-star" style="color:#0065FC"></i>
+                <i class="fas fa-star" style="color:#0065FC"></i>
+                <i class="fas fa-star" style="color:#dbd9d9"></i>
               </div>
             </div>
           </div>
-
-
-
-
-
         </div>
 
       </div>
-
-
-
-
     </div>
 
     <div class="activites-container" id="activites">
@@ -266,59 +251,59 @@
 
         <div class="activites-column">
 
-          <div class="activites-pic"> <img src="Images/A1.jpg" class="activites-pic--style">
+          <div class="activites-pic"> <img src="Images/A1.jpg" alt="View" class="activites-pic--style">
 
             <div class="activites-pic--text">
-              <h1>Old Port</h1>
+              <h3 class="ac-text">Old Port</h3>
             </div>
           </div>
         </div>
         <div class="two-imgs">
           <div class="two-imgs-activites-column">
 
-            <div class="activites-pic"> <img src="Images/A2.jpg" class="activites-pic--style">
+            <div class="activites-pic-big"> <img src="Images/A2.jpg" alt="View" class="activites-pic-style-big">
 
               <div class="activites-pic--text">
-                <h1>Pomègues Fort</h1>
+                <h3 class="ac-text">Pomègues Fort</h3>
               </div>
             </div>
           </div>
           <div class="two-imgs-activites-column">
 
-            <div class="activites-pic"> <img src="Images/A3.jpg" class="activites-pic--style">
+            <div class="activites-pic-small"> <img src="Images/A3.jpg" alt="View" class="activites-pic-style-small">
 
               <div class="activites-pic--text">
-                <h1>Frioul Island</h1>
+                <h3 class="ac-text">Frioul Island</h3>
               </div>
             </div>
           </div>
         </div>
         <div class="activites-column">
 
-          <div class="activites-pic"> <img src="Images/A4.jpg" class="activites-pic--style">
+          <div class="activites-pic"> <img src="Images/A4.jpg" alt="View" class="activites-pic--style">
 
             <div class="activites-pic--text">
-              <h1>Calanques National Park</h1>
+              <h3 class="ac-text">Calanques National Park</h3>
             </div>
           </div>
         </div>
-        <div class="two-imgs">
+        <div class="two-imgs-two">
           <div class="two-imgs-activites-column">
 
-            <div class="activites-pic"> <img src="Images/A5.jpg" class="activites-pic--style">
+            <div class="activites-pic-big"> <img src="Images/A5.jpg" alt="View" class="activites-pic-style-big">
 
               <div class="activites-pic--text">
-                <h1>Nort-Dame-de-la-Grade</h1>
+                <h3 class="ac-text">Nort-Dame-de-la-Grade</h3>
               </div>
             </div>
           </div>
 
           <div class="two-imgs-activites-column">
 
-            <div class="activites-pic"> <img src="Images/A6.jpg" class="activites-pic--style">
+            <div class="activites-pic-small"> <img src="Images/A6.jpg" alt="View" class="activites-pic-style-small">
 
               <div class="activites-pic--text">
-                <h1>Longchamp Park</h1>
+                <h3 class="ac-text">Longchamp Park</h3>
               </div>
             </div>
           </div>
@@ -337,25 +322,22 @@
   <footer>
 
     <ul class="about">
-      <li> About </li>
-      </br>
-      <li> Site Map </li>
-      <li> General Terms and Conditions </li>
-      <li> Data and Privacy </li>
+      <li class="l-height"> <a class="footer-link" href="#">About </a> </li>
+      <li><a class="footer-link" href="#">Site Map </a> </li>
+      <li><a class="footer-link" href="#">General Terms and Conditions </a> </li>
+      <li><a class="footer-link" href="#">Data and Privacy</a> </li>
     </ul>
 
     <ul class="our">
-      <li> Our Accommodations </li>
-      </br>
-      <li> Quality Assessment </li>
-      <li> You have a hotel? </li>
+      <li class="l-height"> <a class="footer-link" href="#">Our Accommodations </a> </li>
+      <li><a class="footer-link" href="#">Quality Assessment </a> </li>
+      <li><a class="footer-link" href="#">You have a hotel?</a> </li>
 
     </ul>
     <ul class="assistance">
-      <li> Assistance</li>
-      </br>
-      <li> Help dest </li>
-      <li> Contact Us </li>
+      <li class="l-height"> <a class="footer-link" href="#">Assistance </a> </li>
+      <li><a class="footer-link" href="#">Help dest </a> </li>
+      <li><a class="footer-link" href="#">Contact Us</a> </li>
     </ul>
   </footer>
 
