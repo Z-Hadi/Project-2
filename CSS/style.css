@@ -433,13 +433,15 @@ footer {
 
 @media (max-width:1050px) {
   body {
-    width: 460px;
+    
+    width: 440px;
     min-width: 410px;
     margin: auto;
   }
   section {
     padding: 20px;
     margin-bottom: 190px;
+    background-color: antiquewhite;
   }
   #sign {
     order: 1;
@@ -472,8 +474,16 @@ footer {
     padding-left: 10px;
     padding-right: 30px;
   }
-  .navbar-link__padding {
-    padding-left: 50px;
+  .navbar-link__accommodations{
+margin-left: -20px;
+padding-left: 30px;
+padding-right: 50px;
+
+  }
+  .navbar-link__activites {
+    margin-right: -20px;
+    padding-left: 80px;
+    padding-right: 87px;
   }
   .navbar-link:hover {
     border-bottom: 4px solid #0065FC;
