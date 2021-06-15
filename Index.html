@@ -17,14 +17,14 @@
         <li class="flex-grow-1">
           <img src="Images/Reservia.png" class="navbar-logo" alt="Reservia" title="reservia">
         </li>
-        <li>
+        <li id="acco">
           <a class="navbar-link" href="#accommodations">Accommodations</a>
         </li>
-        <li>
-          <a class="navbar-link" href="#activites">Activites</a>
+        <li id="acti">
+          <a class="navbar-link navbar-link__padding" href="#activites">Activites</a>
         </li>
-        <li>
-          <a class="navbar-link  navbar-link-signup" href="#"><strong>Sign Up</strong></a>
+        <li id="sign">
+          <a class="navbar-link  navbar-link-signup" href="#"><strong id="ws">Sign Up</strong></a>
         </li>
       </ul>
     </nav>
@@ -40,26 +40,31 @@
         <h4>Mareseille, France</h4>
       </div>
       <div class="search-item-search">
-        <p> Search</p>
+        <span class="full-text">
+          <p>Search</p>
+        </span>
+        <span class="short-text"></p><i class="fas fa-search"></i></span>
       </div>
     </div>
     <div class="filters">
-      <h2 class="filter-item-head"> Filters </h2>
-      <div class="filter-selection">
+      <div class="filter-head">
+        <h2 class="filter-item-head"> Filters </h2>
+      </div>
+      <div class="filter-selection filter-selection-cost">
         <div class="filter-item-icon"><i class="fas fa-money-bill-wave"></i></div>
-        <div class="filter-item-text">Low cost</div>
+        <div class="filter-item-text ">Low cost</div>
       </div>
-      <div class="filter-selection">
+      <div class="filter-selection filter-selection-friendly">
         <div class="filter-item-icon"><i class="fas fa-child"></i></div>
-        <div class="filter-item-text">Family-friendly</div>
+        <div class="filter-item-text y">Family-friendly</div>
       </div>
-      <div class="filter-selection">
+      <div class="filter-selection filter-selection-romantic">
         <div class="filter-item-icon"><i class="fas fa-heart"></i></i></div>
-        <div class="filter-item-text">Romantic</div>
+        <div class="filter-item-text ">Romantic</div>
       </div>
-      <div class="filter-selection">
+      <div class="filter-selection filter-selection-pets">
         <div class="filter-item-icon"><i class="fas fa-dog"></i></i></div>
-        <div class="filter-item-text">Pets allowed</div>
+        <div class="filter-item-text ">Pets allowed</div>
       </div>
 
     </div>

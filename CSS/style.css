@@ -9,7 +9,10 @@ body {
 }
 
 section {
-  margin: 20px 32px;
+  margin: auto;
+  max-width: 1400px;
+  box-sizing: border-box;
+  padding: 20px 30px;
 }
 
 .navbar {
@@ -52,6 +55,7 @@ section {
 
 .navbar-logo {
   width: 100px;
+  margin-top: -15px;
 }
 
 .navbar-link:hover {
@@ -89,11 +93,12 @@ section {
   background-color: #0065FC;
   border: 2px solid #f2f2f2;
   border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
 }
 
 .search-item-france {
   display: flex;
-  padding: 5px 65px 0px 15px;
+  padding: 5px 70px 0px 15px;
   border: 2px solid #f2f2f2;
   border-right: none;
 }
@@ -107,10 +112,13 @@ section {
   border-radius: 20px 0px 0px 20px;
 }
 
+.short-text {
+  display: none;
+}
+
 .filters {
   display: flex;
   margin-top: 20px;
-  margin-left: -5px;
 }
 
 .filter-item-head {
@@ -155,6 +163,7 @@ section {
 
 .accommodation {
   width: 62%;
+  min-width: 670px;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 20px 20px 0px 40px;
@@ -175,6 +184,10 @@ section {
   height: 50%;
   box-shadow: 10px 10px 10px #dbd9d9;
   transition-duration: 0.1s;
+}
+
+.column:hover {
+  transform: scale(1.04);
 }
 
 .Card__head {
@@ -219,6 +232,7 @@ section {
 
 .row-mp {
   display: flex;
+  min-width: 355px;
   flex-direction: column;
   margin-left: 0px;
   margin-bottom: 5px;
@@ -228,22 +242,31 @@ section {
 .column-mp {
   box-shadow: 10px 10px 10px #dbd9d9;
   margin-bottom: 30px;
+  transition-duration: 0.1s;
+  border-radius: 20px;
+}
+
+.column-mp:hover {
+  transform: scale(1.04);
 }
 
 .pic-mp {
   background-color: white;
+  height: 160px;
   border-radius: 20px;
   padding: 5px;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .pic--style-mp {
   width: 160px;
-  height: 160px;
   border-radius: 20px 0px 0px 20px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .pic--text-mp {
@@ -285,6 +308,11 @@ section {
   height: 100%;
   box-shadow: 5px 5px 5px #dbd9d9;
   border-radius: 15px;
+  transition-duration: 0.1s;
+}
+
+.activites-column:hover {
+  transform: scale(1.04);
 }
 
 .activites-pic {
@@ -292,6 +320,7 @@ section {
   height: 90%;
   border-radius: 15px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .activites-pic--style {
@@ -299,6 +328,8 @@ section {
   height: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .two-imgs {
@@ -320,6 +351,11 @@ section {
   box-shadow: 5px 5px 5px #dbd9d9;
   border-radius: 15px;
   margin-bottom: 20px;
+  transition-duration: 0.1s;
+}
+
+.two-imgs-activites-column:hover {
+  transform: scale(1.04);
 }
 
 .activites-pic-big {
@@ -327,6 +363,7 @@ section {
   height: 240px;
   border-radius: 15px;
   margin-bottom: 45px;
+  cursor: pointer;
 }
 
 .activites-pic-style-big {
@@ -334,6 +371,8 @@ section {
   height: 97%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .activites-pic-small {
@@ -341,6 +380,7 @@ section {
   height: 160px;
   border-radius: 15px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .activites-pic-style-small {
@@ -348,6 +388,8 @@ section {
   height: 75%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .ac-text {
@@ -366,6 +408,7 @@ footer {
   background-color: #f2f2f2;
   display: flex;
   flex-flow: row wrap;
+  padding-top: 20px;
 }
 
 .about, .our {
@@ -387,3 +430,151 @@ footer {
 .about li:nth-child(1), .our li:nth-child(1), .assistance li:nth-child(1) {
   font-weight: bold;
 }
+
+@media (max-width:1050px) {
+  body {
+    width: 460px;
+    min-width: 410px;
+    margin: auto;
+  }
+  section {
+    padding: 20px;
+    margin-bottom: 190px;
+  }
+  #sign {
+    order: 1;
+  }
+  #acco {
+    order: 2;
+  }
+  #acti {
+    order: 3;
+  }
+  .accommodation {
+    min-width: 0;
+  }
+  .activites-row {
+    min-width: 0;
+  }
+  .row-mp {
+    min-width: 0;
+  }
+  .navbar {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+  }
+  .navbar-logo {
+    margin-right: 150px;
+    margin-bottom: 15px;
+  }
+  .navbar-link {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  .navbar-link__padding {
+    padding-left: 50px;
+  }
+  .navbar-link:hover {
+    border-bottom: 4px solid #0065FC;
+    border-top: none;
+  }
+  .short-text {
+    margin-top: -9px;
+    display: inline-block;
+  }
+  .full-text {
+    display: none;
+  }
+  .search-item-search {
+    margin-left: -15px;
+    border-radius: 20px;
+  }
+  .filters {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .filter-head {
+    flex-basis: 100%;
+  }
+  .filter-selection {
+    margin-bottom: 10px;
+  }
+  .filter-selection-cost {
+    order: 1;
+  }
+  .filter-selection-friendly {
+    order: 3;
+  }
+  .filter-selection-romantic {
+    order: 2;
+  }
+  .filter-selection-pets {
+    order: 4;
+  }
+  .accommodations-mp {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .most-popular {
+    width: 98%;
+    margin-left: -20px;
+    border-radius: 0px;
+    padding: 20px 20px 0px 20px;
+    ;
+  }
+  .pic--text-mp {
+    padding-right: 10px;
+  }
+  .accommodation {
+    width: 98%;
+    background-color: white;
+    margin-left: -20px;
+    border-radius: 0px;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 30px;
+  }
+  .row {
+    display: flex;
+    flex-flow: column;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .column {
+    margin-bottom: 20px;
+    width: 98%;
+  }
+  .activites-container {
+    margin-bottom: 550px;
+  }
+  .activites-row {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 0;
+  }
+  .activites-column {
+    margin-bottom: 20px;
+  }
+  .activites-pic {
+    height: 173px;
+  }
+  .activites-pic--style {
+    height: 130px;
+  }
+  .two-imgs-activites-column{
+    height: 183px;
+  }
+  .activites-pic-big {
+    height: 134px;
+  }
+  .activites-pic-style-small {
+    height: 130px;
+  }
+  .ac-text {
+    margin-top: 4px;
+  }
+  .our {
+    margin-right: 150px;
+  }
