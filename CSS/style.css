@@ -437,7 +437,7 @@ footer {
 
 @media (max-width:1050px) {
   body {
-    width: 440px;
+    width: 445px;
     min-width: 410px;
     margin: auto;
   }
@@ -492,6 +492,10 @@ footer {
     border-bottom: 4px solid #0065FC;
     border-top: none;
   }
+  .navbar-link-signup:hover {
+    border-bottom: none;
+  }
+
   .dream-vacation__header {
     margin-top: 50px;
     margin-bottom: 15px;
