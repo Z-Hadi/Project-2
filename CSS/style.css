@@ -435,7 +435,7 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width:1050px) {
+@media (max-width:1060px) {
   body {
     width: 445px;
     min-width: 410px;
