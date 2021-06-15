@@ -416,7 +416,11 @@ footer {
 }
 
 .l-height {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.footer-list {
+  margin-bottom: 8px;
 }
 
 .footer-link {
@@ -591,6 +595,6 @@ footer {
   .ac-text {
     margin-top: 4px;
   }
-  .our {
+  .about, .our {
     margin-right: 150px;
   }
