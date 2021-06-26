@@ -8,7 +8,7 @@ body {
   margin: 0px;
 }
 
-section {
+.main-section {
   margin: auto;
   max-width: 1400px;
   box-sizing: border-box;
@@ -41,6 +41,7 @@ section {
   height: 25px;
   border-radius: 25px;
   border: 2px solid #e6e5e5;
+  padding-top: 1.5px;
   font-size: 12px;
   margin-top: 10px;
   margin-right: 8px;
@@ -86,8 +87,12 @@ section {
   font-size: 18px;
 }
 
+.full-text {
+  margin-top: 20px;
+}
+
 .search-item-search {
-  padding: 10px 25px;
+  padding: 10px 25px 0px 25px;
   color: white;
   font-weight: bold;
   background-color: #0065FC;
@@ -163,7 +168,6 @@ section {
 
 .accommodation {
   width: 62%;
-  min-width: 670px;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 20px 20px 0px 40px;
@@ -232,7 +236,6 @@ section {
 
 .row-mp {
   display: flex;
-  min-width: 355px;
   flex-direction: column;
   margin-left: 0px;
   margin-bottom: 5px;
@@ -403,11 +406,12 @@ li {
   list-style: none;
 }
 
-footer {
+.footer-container {
   width: 100%;
   background-color: #f2f2f2;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding-top: 20px;
 }
 
@@ -441,18 +445,32 @@ footer {
     min-width: 410px;
     margin: auto;
   }
-  section {
+  .main-section {
     padding: 20px;
     margin-bottom: 190px;
   }
   #sign {
     order: 1;
+    text-align: right;
   }
   #acco {
     order: 2;
+    text-align: center;
+    border-bottom: 4px solid #f2f2f2;
   }
   #acti {
+    text-align: center;
     order: 3;
+    border-bottom: 4px solid #f2f2f2;
+  }
+  #acti:hover, #acco:hover {
+    border-bottom: 4px solid #0065FC;
+  }
+  .navbar-link:hover {
+    border-top: none;
+  }
+  .navbar-link-signup:hover {
+    border-bottom: none;
   }
   .accommodation {
     min-width: 0;
@@ -468,34 +486,13 @@ footer {
     flex-flow: row wrap;
     margin-bottom: 30px;
   }
-  .navbar-logo {
-    margin-right: 150px;
-    margin-bottom: 15px;
+  .navbar__item {
+    width: 50%;
   }
-  .navbar-link {
-    padding-left: 10px;
-    padding-right: 30px;
+  .navbar__link {
+    display: block;
+    padding: 15px 0;
   }
-  .navbar-link__accommodations {
-    margin-left: -20px;
-    padding-left: 30px;
-    padding-right: 50px;
-    border-bottom: 4px solid #f2f2f2;
-  }
-  .navbar-link__activites {
-    margin-right: -20px;
-    padding-left: 80px;
-    padding-right: 87px;
-    border-bottom: 4px solid #f2f2f2;
-  }
-  .navbar-link:hover {
-    border-bottom: 4px solid #0065FC;
-    border-top: none;
-  }
-  .navbar-link-signup:hover {
-    border-bottom: none;
-  }
-
   .dream-vacation__header {
     margin-top: 50px;
     margin-bottom: 15px;
@@ -511,6 +508,7 @@ footer {
     display: none;
   }
   .search-item-search {
+    padding: 28px 25px 0px 25px;
     margin-left: -15px;
     border-radius: 20px;
   }
@@ -601,4 +599,7 @@ footer {
   }
   .about, .our {
     margin-right: 150px;
+  }
+  .footer-container {
+    justify-content: left;
   }
