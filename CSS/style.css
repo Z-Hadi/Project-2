@@ -92,7 +92,7 @@ body {
 }
 
 .search-item-search {
-  padding: 10px 25px 0px 25px;
+  padding: 28px 25px 0px 25px;
   color: white;
   font-weight: bold;
   background-color: #0065FC;
@@ -415,8 +415,14 @@ li {
   padding-top: 20px;
 }
 
+.footer-contants {
+  width: 1400px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .about, .our {
-  margin-right: 300px;
+  margin-right: 20%;
 }
 
 .l-height {
@@ -506,6 +512,7 @@ li {
   }
   .full-text {
     display: none;
+    padding-top: 8px;
   }
   .search-item-search {
     padding: 28px 25px 0px 25px;
@@ -603,3 +610,4 @@ li {
   .footer-container {
     justify-content: left;
   }
+}
