@@ -103,9 +103,19 @@ body {
 
 .search-item-france {
   display: flex;
-  padding: 5px 70px 0px 15px;
+  padding-top: 1px;
+  padding-right: 1px;
   border: 2px solid #f2f2f2;
   border-right: none;
+}
+
+input {
+  border: none;
+  height: 50px;
+  width: 250px;
+  border-color: #f2f2f2;
+  padding-left: 10px;
+  font: bold 20px Raleway;
 }
 
 .search-item-location {
@@ -140,6 +150,12 @@ body {
   border-radius: 50px;
   margin-right: 20px;
   box-sizing: border-box;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.filter-selection:hover {
+  transform: scale(1.1);
 }
 
 .filter-item-icon {
